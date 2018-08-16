@@ -104,7 +104,7 @@ function status($screen_name){
 
 //set this up as cron job to run 1/hr
 for($x=1; $x<1000 ;$x++){	
-	$friends = get_friends("aplusk");
+	$friends = get_friends("aplusk");	//pick a random account to start from
 	$random = get_random_friend($friends);
 	$friends = get_friends($random);
 	$random = get_random_friend($friends , true);
